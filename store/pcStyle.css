@@ -1,0 +1,44 @@
+body {
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	background-color: white;
+	background-image: url("graphics/organicbg2.png");
+	background-repeat: repeat;
+	padding-left: 100px;
+	padding-right: 100px; 
+	padding-bottom: 100px;
+	
+}
+/*#containter
+{
+	
+	padding-left: 100px;
+}
+*/
+
+.menu{
+	background-color: beige;
+	/*background-color: rgba(128, 128, 128, 0.1);*/
+	border: 1px solid grey;
+	
+	color: black;
+}
+.header{
+	font-family: Arial, Verdana, Geneva, Helvetica, sans-serif;
+	font-size: 24px;
+	color: black:
+	
+	
+}
+.contact{
+	font-size:xx-small;
+	color: black;
+	/*text-shadow: 2px 2px 2px #000;*/
+	text-align: right;
+}
+.orderSum{
+	color: black;
+	
+}
+.options {
+	visibility: hidden;
+}

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Smooth Organics</title>
+       <meta name="author" content="EDCC" />
+          <meta name="keywords" content="final project 'Smoothie Order Site'" />
+       <meta name="description" content="This template is intended to be used as a base to build my Smoothie web page." />
+       <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+       <meta name="robots" content="none" />
+	   <link rel="stylesheet" href="pcStyle.css" type="text/css" />
+		<script type="text/javascript" src="cookies.js"></script>
+		<script type="text/javascript" src="library.js"></script>
+	   
+</head>
+<body>
+
+<table name="main" cellpadding="5" width="100%" border="0">
+	<tr>
+		<td width="100"></td>
+		<td></td>
+		<td width="1"></td>
+		<td></td>
+		<td width="1"></td>
+		<td></td>
+	</tr>
+<tr>
+		<td colspan="2">
+			<img src="graphics/pc.jpeg" width="238" height="120" alt="" border="0">
+		</td>
+		<td valign="bottom" class="header"><img src="graphics/sologo5.png" alt="Smooth Organics Logo" height="100" width="600" /></td>
+		<td width="1px">&nbsp;</td>
+		<td width="300" valign="bottom" class="contact">
+			20000 68th Ave. W<br />
+			Lynnwood, WA 98036<br />
+			425.222.1234
+		</td>
+	</tr>
+	<tr>
+		<td colspan="6">
+			<hr style="background-color:white" />
+		</td>
+	</tr>
+	<tr>
+		<td rowspan="2" valign="top" nowrap="nowrap" class="orderSum">
+			<a href="home.html" class="orderSum">Home</a><br />
+			<a href="contact.html" class="orderSum">Contact Us</a><br />
+			<a href="order.html" class="orderSum">Order Now</a>
+		</td>
+		<td rowspan="2" width="1" style="background-color: White;"></td>
+		
+		<td valign="top" class="menu" width="1000">
+	<table class="menu" border="0" width="100%">
+				<tr>
+					<td style="padding-left:35px;">
+						Your Current
+						<script type="text/javascript">
+							document.write(GetCookie("PCDesc"));
+						</script>
+					</td>
+					<td style="padding-right:35px;">
+						<br /><br />
+						<script type="text/javascript">
+							document.write(GetCookie("PriceSum"));
+						</script>
+					</td>
+				</tr>
+			</table>
+			
+		</td>
+		<td rowspan="2" width="1" style="background-color: White;"></td>
+		<td id="orderSum"  class="orderSum" valign="top">&nbsp;</td>
+	</tr>
+	<tr>
+		<td class="menu" valign="top">
+			Delivery Information <span style="font-size:x-small">(* required information)</span>
+			<form action="summary.html" method="get"  id="customerForm" onsubmit="return chForm();">
+			<table width="100%">
+				<tr>
+	<td width="400px">First Name: *</td>
+					<td><input type="text" name="txtFName" onchange="return clearThis()" /></td>
+					<td id="txtFName" style="color:white;font-weight:bold"></td>
+				</tr>
+				<tr>
+					<td>Last Name: *</td>
+					<td><input type="text" name="txtLName"  onchange="return clearThis()" /></td>
+					<td id="txtLName" style="color:white;font-weight:bold"></td>
+				</tr>
+				<tr>
+					<td>Email: *</td>
+					<td><input type="text" name="txtEmail" size="40"  onchange="return clearThis()" /></td>
+					<td id="txtEmail" style="color:white;font-weight:bold; font-size: smaller"></td>
+				</tr>
+				
+				<tr>
+					<td>Address: *</td>
+					<td><input type="text" name="txtAddress"  onchange="return clearThis()" /></td>
+					<td id="txtAddress" style="color:white;font-weight:bold"></td>
+				</tr>
+				
+				<tr>
+					<td>Apartment: </td>
+					<td><input type="text" name="txtApartment"  onchange="return clearThis()" /></td>
+					<td id="txtApartment" style="color:white;font-weight:bold"></td>
+				</tr>
+				
+				<tr>
+					<td>City, State, Zip: *</td>
+					<td><input type="text" name="txtCity"  onchange="return clearThis()" />
+					<input type="text" name="txtState" size="2" onchange="return clearThis()" />
+					<input type="text" name="txtZip" size="5" onchange="return clearThis()" /></td>
+					
+					<td id="txtCity" style="color:white;font-weight:bold"></td>
+					<td id="txtState" style="color:white;font-weight:bold"></td>
+					<td id="txtZip" style="color:white;font-weight:bold"></td>
+				</tr>
+				<tr>
+					<td>Phone: * (XXX-XXX-XXXX) </td>
+					<td><input type="text" name="txtPhone"  onchange="return clearThis()" /></td>
+					<td id="txtPhone" style="color:white;font-weight:bold"></td>
+				</tr>
+
+				<tr>
+					<td colspan="10" align="center"><br /><br /><input type="submit" name="cmdSubmit" value="Order your Smoothie" /></td>
+				</tr>
+			</table>
+			
+			</form>
+		</td>
+		<td valign="top" id="priceSum" class="orderSum">&nbsp;</td>
+	</tr>
+</table>
+
+</body>
+
+</html>
+		

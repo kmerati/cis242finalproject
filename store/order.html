@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Smooth Organics</title>
+       <meta name="author" content="EDCC" />
+       <meta name="keywords" content="final project 'Smoothie Order Site'" />
+       <meta name="description" content="This template is intended to be used as a base to build my Smoothie web page." />
+       <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+       <meta name="robots" content="none" />
+	   <link rel="stylesheet" href="pcStyle.css" type="text/css" />
+		<script type="text/javascript" src="library.js"></script>
+	   <script type="text/javascript" src="cookies.js"></script>
+</head>
+<body>
+<div id="container">
+<table name="main" cellpadding="5" width="100%" border="0">
+	<tr>
+		<td width="100"></td>
+		<td></td>
+		<td ></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td colspan="2">
+			<img src="graphics/pc.jpeg" width="238" height="120" alt="" border="0">
+		</td>
+		<td valign="bottom" class="header"><img src="graphics/sologo5.png" alt="Smooth Organics Logo" height="100" width="600" /></td>
+		<td width="1px">&nbsp;</td>
+		<td width="300" valign="bottom" class="contact">
+			20000 68th Ave. W<br />
+		Lynnwood, WA 98036<br />
+			425.222.1234
+		</td>
+		
+	</tr>
+	<tr>
+		<td colspan="6">
+		
+			<hr style="background-color:white" />
+		</td>
+	</tr>
+	<tr>
+		<td rowspan="2" valign="top" nowrap="nowrap" class="orderSum">
+			<a href="home.html" class="orderSum">Home</a><br />
+			<a href="contact.html" class="orderSum">Contact Us</a><br />
+			<a href="order.html" class="orderSum">Order Now</a>
+		</td>
+		<td rowspan="2" width="1" style="background-color: White;"></td>
+<td valign="top" class="menu" width="1000">
+			<form>
+			<table class="menu" border="0" width="100%">
+				<tr>
+					<td valign="top">Select your size:</td>
+					<td>
+						<input type="radio" name="rdoSize" value="1" onclick="return orderSummary()" /> 16 oz<br />
+						<input type="radio" name="rdoSize" value="2" checked="checked" onclick="return orderSummary()" /> 20 oz<br />
+						<input type="radio" name="rdoSize" value="3" onclick="return orderSummary()" /> 24 oz<br />
+					</td>
+				</tr>
+				<tr>
+					<td colspan="2"><hr style="background-color:white" /></td>
+				</tr>
+				<tr>
+			<td valign="top">Select your Protein type:</td>
+					<td valign="top" nowrap="nowrap">
+						<input type="radio" name="rdoWarranty" value="ht" checked="checked" onclick="return orderSummary()" /> Organic Pea Protein<br />
+						<input type="radio" name="rdoWarranty" value="dd"  onclick="return orderSummary()" /> Organic Grassfed Whey Protein
+					</td>
+				</tr>
+				<tr>
+					<td colspan="2"><hr style="background-color:white" /></td>
+				</tr>
+					
+			
+		<tr>
+<td>Build your own: </td>
+<td><input type="radio" name="rdoType" value="build" 
+onclick="return changeOption();" /></td>
+</tr>
+<tr id="options">
+<td colspan="2">
+<table width="100%">
+<tr>
+<td width="100"></td>
+<td nowrap="nowrap">
+<input type="checkbox" value="Blueberry" name="chkOption" onclick="return orderSummary()"> Blueberry <br />
+<input type="checkbox" value="Strawberry" name="chkOption" onclick="return orderSummary()"> Strawberry <br />
+<input type="checkbox" value="Banana" name="chkOption" onclick="return orderSummary()"> Banana <br />
+</td>
+<td nowrap="nowrap">
+<input type="checkbox" value="Cherry" name="chkOption"
+onclick="return orderSummary()"> Cherry <br />
+<input type="checkbox" value="Pineapple" name="chkOption"
+onclick="return orderSummary()"> Pineapple <br />
+<input type="checkbox" value="Mango" name="chkOption"
+onclick="return orderSummary()"> Mango <br />
+</td>
+</tr>
+	</table>	
+		</td>
+		</tr>
+		
+		<tr>
+<td valign="top">Or Select from one of our house Specials</td>
+<td nowrap="nowrap">
+<input type="radio" name="rdoType" value="Mt. Rainier Cherry" onclick="return hideOption();" /> Mt. Rainier Cherry<br />
+<input type="radio" name="rdoType" value="Seattle Sunrise" onclick="return hideOption();" /> Seattle Sunrise<br />
+<input type="radio" name="rdoType" value="Spaceberry" onclick="return hideOption();" /> Spaceberry
+</td>
+</tr>
+		
+			</table>
+			</form>
+		</td>
+		
+		<td rowspan="2" width="1" style="background-color: White;"></td>
+		<td class="orderSum" valign="top">
+		<div id="orderSum" style="height: 175px">Order Summary: <br /> <br /></div>
+			<br /><br /><br />
+			<div id="priceSum">
+			<table width="100%"> <tr><td>Subtotal:</td> <td align='right'></td></tr><tr><td>Tax:</td> <td align="right" style="border-bottom-color: White; border-bottom-width: 1px; border-bottom-style: solid;"></td></tr><tr> <td>Total:</td> <td align='right'></td></tr></table>
+			</div>
+		</td>
+	</tr>
+	<tr>
+		<td valign="top" class="menu" width="1000">
+			<center><input type="button" onclick="return writePCCookies()" value="Submit Your Order"></center>
+		</td>
+	</tr>
+</table>
+
+<script type="text/javascript">
+<!--
+//<![CDATA[
+document.forms[0].reset();
+orderSummary();
+//]]>
+//-->
+</script>
+
+</div>
+</body>
+
+</html>
+
